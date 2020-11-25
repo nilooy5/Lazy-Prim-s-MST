@@ -196,7 +196,7 @@ public class LazyPrimMST {
      * @param args the command-line arguments
      */
     public static void main(String[] args) {
-        In in = new In(args[0]);
+        In in = new In("tinyEWG.txt");
         EdgeWeightedGraph G = new EdgeWeightedGraph(in);
         LazyPrimMST mst = new LazyPrimMST(G);
         for (Edge e : mst.edges()) {
